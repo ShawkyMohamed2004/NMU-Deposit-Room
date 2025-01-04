@@ -1,0 +1,309 @@
+body {
+    background-image: url('t-7.jpg');
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #93191f;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #93191f;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #93191f;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#studentList {
+    max-width: 800px;
+    margin: 20px auto;
+    overflow-y: auto;
+    max-height: 500px;
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #93191f;
+    border-radius: 10px;
+}
+
+#studentList table {
+    width: 100%;
+}
+
+#studentList th,
+#studentList td {
+    padding: 10px;
+    text-align: center;
+}
+
+#studentList th {
+    background-color: #93191f;
+    color: white;
+}
+
+#studentList img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+#toggleButton {
+    background-color: #93191f;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.deleteButton {
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#fullscreenImage {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+#fullscreenContent {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fullscreenImage img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+.delete-modal {
+    text-align: center;
+    padding: 30px !important;
+    border-radius: 10px !important;
+    max-width: 400px !important;
+    margin: 15% auto !important;
+}
+
+.delete-icon {
+    font-size: 48px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.confirm-delete, .cancel-delete {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.confirm-delete {
+    background-color: #ff0000;
+    color: white;
+}
+
+.confirm-delete:hover {
+    background-color: #cc0000;
+}
+
+.cancel-delete {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-delete:hover {
+    background-color: #5a6268;
+}
+
+.delete-modal h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.delete-modal p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.password-modal {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 15vh auto;
+    background: white;
+    position: relative;
+}
+
+.password-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.password-modal h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.password-container input:focus {
+    outline: none;
+    border-color: #93191f;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-password:hover {
+    color: #93191f;
+}
+
+.submit-password {
+    background-color: #93191f;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.submit-password:hover {
+    background-color: #7a1419;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #93191f;
+}
