@@ -38,6 +38,3 @@ This project was developed as part of a university course assignment at the Facu
 
 ## License
 This project is personally owned by the developer. All rights reserved. This project was created for educational purposes as a university course assignment.
-
----
-Last Updated: January 2025
